@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="shortcut icon" href="img/favimg.png" type="image/x-icon">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Sorting Visualizer</h1>
+        <div class="headerBtn">
+            <button class="headerBtn__array btn">New Array</button>
+            <button class="headerBtn__bubble btn">Bubble Sort</button>
+            <button class="headerBtn__selection btn">Selection Sort</button>
+            <button class="headerBtn__insertion btn">Insertion Sort</button>
+            <button class="headerBtn__merge btn">Merge Sort</button>
+            <button class="headerBtn__quick btn">Quick Sort</button>
+        </div>
+    </div>
+    <div class="mainContainer" id="bars">
+
+    </div>
+    <div class="controlBtns">
+        <div class="controlBtns__child">
+            <span id="numbers">
+                <!-- no of bars -->
+                <input id="bars_no" class="input" type="range" min=10 max=120 step=1
+                value=15>
+            </span> 
+            <div class="name">No of Bars</div>
+        </div>
+        <button id="btnPlay" class="button" ></button>
+        <div class="controlBtns__child">
+            <span>
+                <!-- Speed of sort -->
+                <input id="bars_speed" class = "input" type="range" min=50 max=950 step=1
+                value=500>
+            </span> 
+            <div class="name">Speed</div>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>&copy 2022 - Rahul Saraf</h4>
+    </div>
+    <script src="js/sorting.js"></script>
+</body>
+</html>

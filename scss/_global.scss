@@ -1,0 +1,33 @@
+@import "variables";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body{
+        max-height: 100vh;
+        font-family: 'Mate SC', serif;
+        color: white;
+        background-color: $bodyBackground;
+    }
+}
+
+.btn{
+    display: inline-block;
+    background: transparent;
+    padding: 0.3125rem;
+    border-color: $btnBorder;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    box-shadow: 1px 1px 1px 0px $btnBorder;
+
+    &:hover{
+        filter: brightness(200%);
+        transform: scale(0.9);
+        // box-shadow: 0px 0px 0px 0px $btnBorder;
+        // margin-left: 4px;
+        // margin-top: 4px;
+    }
+}
+
